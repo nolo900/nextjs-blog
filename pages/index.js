@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
 
           <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
               <h2 className={utilStyles.headingLg}>Example Blog Posts</h2>
-              <h5>This data was parsed from markdown files on the file system.</h5>
+              <p>This data was parsed from markdown files on the file system. But this data can be populated via an external api or an internal database query!</p>
               <ul className={utilStyles.list}>
                   {allPostsData.map(({ id, title, date }) => (
                       <li className={utilStyles.listItem} key={id}>
