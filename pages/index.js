@@ -28,7 +28,8 @@ export default function Home({ allPostsData }) {
         </section>
 
           <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-              <h2 className={utilStyles.headingLg}>Blog</h2>
+              <h2 className={utilStyles.headingLg}>Example Blog Posts</h2>
+              <h5>This data was parsed from markdown files on the file system.</h5>
               <ul className={utilStyles.list}>
                   {allPostsData.map(({ id, title, date }) => (
                       <li className={utilStyles.listItem} key={id}>
